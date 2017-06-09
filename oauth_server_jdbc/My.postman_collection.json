@@ -1,0 +1,50 @@
+{
+	"variables": [],
+	"info": {
+		"name": "My",
+		"_postman_id": "c95ea91a-e7e6-6ced-871d-ff4d468d2aa9",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "oauth token",
+			"request": {
+				"url": "localhost:8080/oauth/token",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWlvcmlhOnNoYWth",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "username",
+							"value": "eduardo",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "password",
+							"value": "Jessica@22!",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
